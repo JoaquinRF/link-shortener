@@ -5,14 +5,15 @@ import Redirect from './pages/Redirect';
 function App() {
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/404" element={<NotFound />} />
-        <Route path="/:shortUrl" element={<Redirect />} />
-      </Routes>
-    </BrowserRouter>
-
+    <div className='flex flex-col items-center'>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/404" element={<NotFound />} />
+          <Route path="/:shortUrl" element={<Redirect />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

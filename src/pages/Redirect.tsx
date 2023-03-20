@@ -15,7 +15,7 @@ function Redirect() {
         }
     }, [navigate, shortUrl])
     return (
-        <div>Loading...</div>
+        <h2 className="mt-8 text-2xl font-bold underline">Loading...</h2>
     )
 }
 
